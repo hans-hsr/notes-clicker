@@ -13,51 +13,148 @@
 
     <header class="main-header">
         <div class="container clearfix">
-            <h1 class="name"><a href="#">Best City Guide</a></h1>
+            <h1 class="name"><a href="#">HSR Notes</a></h1>
             <ul class="main-nav">
-                <li><a href="#">ice cream</a></li>
-                <li><a href="#">donuts</a></li>
-                <li><a href="#">tea</a></li>
-                <li><a href="#">coffee</a></li>
+                <li><a href="#">Unser Team</a></li>
             </ul>
         </div>
     </header>
     <!--/.main-header-->
 
     <div class="banner">
-        <img class="logo" src="img/city-logo.svg" alt="City">
+        <!--<img class="logo" src="img/city-logo.svg" alt="City"> 
         <span class="tagline">The best drinks and eats in the best city ever.</span>
+        -->
+        <div class="filter-container">
+            <ul class="notes-filters">
+                <li><label for="filter-categories">Kategorie:</label></li>
+                <li><select name="filter-categories" id="filter-categories">
+                        <option value="all">Alle</option>
+                        <option value="html">Html</option>
+                        <option value="css">Css</option>
+                        <option value="js">Javascript</option>
+                        <option value="node">Node</option>
+                        <option value="angular">Angular</option>
+                        <option value="typescript">Typescript</option>
+                        <option value="es6">Ecmascript 2015</option>
+
+                    </select></li>
+                <li><label for="filter-states">Status:</label></li>
+                <li><select name="filter-states" id="filter-states">
+                        <option value="all">Alle</option>
+                        <option value="notdone">Offen</option>
+                        <option value="done">Erledit</option>
+
+                    </select>
+                </li>
+                <li><label for="filter-duedates">Termin:</label></li>
+                <li><select name="filter-duedates" id="filter-duedates">
+                        <option value="all">Alle</option>
+                        <option value="none">Heute</option>
+                        <option value="one">Morgen</option>
+                        <option value="two">2 Tage</option>
+                        <option value="seven">7 Tage</option>
+                        <option value="ten">10 Tage</option>
+                    </select>
+                </li>
+                <li><label for="filter-ratings">Wichtig:</label></li>
+                <li><select name="filter-ratings" id="filter-ratings">
+                        <option value="5">Sofort</option>
+                        <option value="4">Sehr dringend</option>
+                        <option value="3">Dringend</option>
+                        <option value="2">Kann warten</option>
+                        <option value="1">Zuletzt</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <!--/.banner-->
 
     <div class="container clearfix">
         <div class="secondary col">
-            <div class="col primary notes-list">
+            <div class="col primary note-list">
                 <ul id="note-list"></ul>
             </div>
         </div>
         <!--/.secondary-->
 
+
+        <!-- note-details -->
         <div class="primary col">
-            <div class="notes-details" id="note-details">
-                <h2 id="note-name"></h2>
+            <div class="note-details" id="note-details">
+                <div><button id="addNoteButton">Neue Notizz</button>
+                <button id="editNoteButton">Bearbeiten</button>
+                </div>
+                <div>
+                    <label for="note-name">Name:</label>
+                    <span id="note-name"></span>
+                </div>
+                <div>
+                    <label for="categories">Kategorie:</label>
+                    <select name="categories" id="categories">
+                    <option value="html">Html</option>
+                    <option value="css">Css</option>
+                    <option value="js">Javascript</option>
+                    <option value="node">Node</option>
+                    <option value="angular">Angular</option>
+                  </select>
+                </div>
+                <div>
+                <label for="ratings">Wichtig:</label>
+                <select name="ratings" id="ratings">
+                        <option value="5">Sofort</option>
+                        <option value="4">Sehr dringend</option>
+                        <option value="3">Dringend</option>
+                        <option value="2">Kann warten</option>
+                        <option value="1">Zuletzt</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="duedates">Termin:</label>
+                    <select name="duedates" id="duedates">
+                        <option value="none">Heute</option>
+                        <option value="one">Morgen</option>
+                        <option value="two">2 Tage</option>
+                        <option value="seven">7 Tage</option>
+                        <option value="ten">10 Tage</option>
+                    </select>
+                </div>
+                <div>
+                    <div id="duedate"></div>
+                </div>
+                <div>
+                    <label for="states">Status</label>
+                    <select name="states" id="states">
+                        <option value="notdone">Offen</option>
+                        <option value="done">Erledit</option>
+
+                    </select>
+                </div>
                 <div id="note-count"></div>
-                <img id="note-img" src="" alt="cute note">
+
+
             </div>
+            <!-- notes-details -->
         </div>
         <!--/.primary-->
 
-        <div class="tertiary col"
-            <p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake
-                brownie lollipop drag&#233;e cheesecake.</p>
-        </div>
-        <!--/.tertiary-->
+
     </div>
 
     <footer class="main-footer">
-        <span>&copy;2015 Residents of The Best City Ever.</span>
+        <ul>
+            <li>HSR CAS-FEM 2016</li>
+            <li>&copy;2016</li>
+            <li>Mike Hüppi</li>
+            <li>Peter Bartholet</li>
+            <li>Hans Schenker</li>
+        </ul>
+        
     </footer>
-    
+
     <script src="app/app.js"></script>
 
 </body>

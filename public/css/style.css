@@ -76,16 +76,18 @@ img {
 }
 
 
-.banner,
-.main-footer {
-	text-align: center;
+
+.main-footer li{
+	margin-left:5em;
+	display: block;
+	float:left;
 }
 
 .banner {
-
+    display: block;
 	color: #fff;
 	background: #3acec2;
-	padding: 3.2em 0;
+	padding: 3.2em 3em;
 	margin-bottom: 60px;
 }
 
@@ -110,14 +112,25 @@ img {
 	margin-bottom: 0;
 }
 
-.notes-list {
+.note-list {
+	display: inline-block;
 	background: lightgreen;
 	margin-bottom:60px;
 }
 
-.notes-details {
+.note-details {
 	background: lightgoldenrodyellow;
 	margin-bottom:60px;
+}
+
+.filter-container li {
+	float:left;
+	margin-left: 1em;
+	display: inline-block;
+}
+
+.filter-container li select {
+	color:black
 }
 
 /* ================================= 
@@ -155,6 +168,8 @@ img {
 		font-size: 1.4em;
 		
 	}
+
+
 
 	/* ---- Float clearfix ---- */
 
