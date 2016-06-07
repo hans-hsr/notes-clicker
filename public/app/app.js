@@ -34,8 +34,8 @@ var model = {
         }
     ]
 };
-/* ======= Octopus ======= */
-var octopus = {
+/* ======= viewModel ======= */
+var viewModel = {
     init: function () {
         // set our current note to the first one in the list
         model.currentNote = model.notes[0];
@@ -68,18 +68,18 @@ var noteView = {
         this.noteImageElem = document.getElementById('note-img');
         this.countElem = document.getElementById('note-count');
         // on click, increment the current note's counter
-        this.noteImageElem.addEventListener('click', function () {
-            octopus.incrementCounter();
-        });
+        //this.noteImageElem.addEventListener('click', function(){
+        //    viewModel.incrementCounter();
+        //});
         // render this view (update the DOM elements with the right values)
         this.render();
     },
     render: function () {
         // update the DOM elements with values from the current note
-        var currentNote = octopus.getCurrentNote();
+        var currentNote = viewModel.getCurrentNote();
         this.countElem.textContent = currentNote.clickCount;
         this.noteNameElem.textContent = currentNote.name;
-        this.noteImageElem.src = currentNote.imgSrc;
+        //this.noteImageElem.src = currentNote.imgSrc;
     }
 };
 var noteListView = {
@@ -91,8 +91,8 @@ var noteListView = {
     },
     render: function () {
         var note, elem, i;
-        // get the notes we'll be rendering from the octopus
-        var notes = octopus.getNotes();
+        // get the notes we'll be rendering from the viewModel
+        var notes = viewModel.getNotes();
         // empty the note list
         this.noteListElem.innerHTML = '';
         // loop over the notes
@@ -107,7 +107,7 @@ var noteListView = {
             //  of the note variable to the click event function)
             elem.addEventListener('click', (function (noteCopy) {
                 return function () {
-                    octopus.setCurrentNote(noteCopy);
+                    viewModel.setCurrentNote(noteCopy);
                     noteView.render();
                 };
             })(note));
@@ -117,5 +117,5 @@ var noteListView = {
     }
 };
 // make it go!
-octopus.init();
+viewModel.init();
 //# sourceMappingURL=app.js.map
