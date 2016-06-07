@@ -1,0 +1,26 @@
+{
+  "name": "notes-clicker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udacity/ud989-cat-clicker-premium-vanilla.git"
+  },
+  "keywords": [],
+  "author": "Hans Schenker <hans.schenker@windowslive.com> (http://www.netxpert.ch/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udacity/ud989-cat-clicker-premium-vanilla/issues"
+  },
+  "homepage": "https://github.com/udacity/ud989-cat-clicker-premium-vanilla#readme",
+  "dependencies": {
+    "handlebars": "4.0.5",
+    "jquery": "2.2.4",
+    "lodash": "4.13.1",
+    "momentjs": "1.1.7"
+  }
+}

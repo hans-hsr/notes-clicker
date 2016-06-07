@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "sourceRoot": "src",
+        "rootDir": "src",
+        "outDir": "dist"
+    },
+    "fies": [
+        "typings/tsd.d.ts",
+        "src/app/main.ts"
+    ]
+}
