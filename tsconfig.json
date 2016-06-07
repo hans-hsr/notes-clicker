@@ -6,7 +6,7 @@
         "sourceMap": true,
         "sourceRoot": "src",
         "rootDir": "src",
-        "outDir": "dist"
+        "outDir": "public"
     },
     "fies": [
         "typings/tsd.d.ts",
