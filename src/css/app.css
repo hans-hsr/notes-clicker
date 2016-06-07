@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #efefef;
+}
+
+.col {
+    float:left;
+}
+.primary {
+    width:40%;
+    background: lightskyblue;
+}
+.secondary {
+    width:40%;
+    background: lightblue;
+}

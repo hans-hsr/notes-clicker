@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Note Clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best City Guide</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <ul id="note-list"></ul>
-    <div id="note-details">
-        <h2 id="note-name"></h2>
-        <div id="note-count"></div>
-        <img id="note-img" src="" alt="cute note">
+
+    <header class="main-header">
+        <div class="container clearfix">
+            <h1 class="name"><a href="#">Best City Guide</a></h1>
+            <ul class="main-nav">
+                <li><a href="#">ice cream</a></li>
+                <li><a href="#">donuts</a></li>
+                <li><a href="#">tea</a></li>
+                <li><a href="#">coffee</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--/.main-header-->
+
+    <div class="banner">
+        <img class="logo" src="img/city-logo.svg" alt="City">
+        <span class="tagline">The best drinks and eats in the best city ever.</span>
     </div>
+    <!--/.banner-->
+
+    <div class="container clearfix">
+        <div class="secondary col">
+            <div class="col primary notes-list">
+                <ul id="note-list"></ul>
+            </div>
+        </div>
+        <!--/.secondary-->
+
+        <div class="primary col">
+            <div class="notes-details" id="note-details">
+                <h2 id="note-name"></h2>
+                <div id="note-count"></div>
+                <img id="note-img" src="" alt="cute note">
+            </div>
+        </div>
+        <!--/.primary-->
+
+        <div class="tertiary col"
+            <p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake
+                brownie lollipop drag&#233;e cheesecake.</p>
+        </div>
+        <!--/.tertiary-->
+    </div>
+
+    <footer class="main-footer">
+        <span>&copy;2015 Residents of The Best City Ever.</span>
+    </footer>
+    
     <script src="app/app.js"></script>
+
 </body>
+
 </html>
