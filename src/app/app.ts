@@ -7,32 +7,52 @@ var model = {
         {
             clickCount : 0,
             name : 'Note 01',
-            imgSrc : '../../img/434164568_fea0ad4013_z.jpg',
-            imgAttribution : 'https://www.flickr.com/photos/bigtallguy/434164568'
+            description: "Das ist Text um die Notizz zu beschreiben",
+            finished: false,
+            category: "Html",
+            rating: 5,
+            dueDate:"2016-01-01",
+            createDate:"2016-01-01"
         },
         {
             clickCount : 0,
             name : 'Note 02',
-            imgSrc : '../../img/4154543904_6e2428c421_z.jpg',
-            imgAttribution : 'https://www.flickr.com/photos/xshamx/4154543904'
+            description: "Das ist Text um die Notizz zu beschreiben",            
+            finished: false,
+            category: "Html",
+            rating: 4,
+            dueDate:"2016-01-02",
+            createDate:"2016-01-01"
         },
         {
             clickCount : 0,
             name : 'Note 03',
-            imgSrc : '../../img/22252709_010df3379e_z.jpg',
-            imgAttribution : 'https://www.flickr.com/photos/kpjas/22252709'
+            description: "Das ist Text um die Notizz zu beschreiben",
+            finished: false,
+            category: "Html",
+            rating: 3,
+            dueDate:"2016-01-03",
+            createDate:"2016-01-01"
         },
         {
             clickCount : 0,
             name : 'Note 04',
-            imgSrc : '../../img/1413379559_412a540d29_z.jpg',
-            imgAttribution : 'https://www.flickr.com/photos/malfet/1413379559'
+            description: "Das ist Text um die Notizz zu beschreiben",
+            finished: false,
+            category: "Html",
+            rating: 5,
+            createDate:"2016-01-01",
+            dueDate:"2016-01-08"
         },
         {
             clickCount : 0,
             name : 'Note 05',
-            imgSrc : '../../img/9648464288_2516b35537_z.jpg',
-            imgAttribution : 'https://www.flickr.com/photos/onesharp/9648464288'
+            description: "Das ist Text um die Notizz zu beschreiben",
+            finished: false,
+            category: "Html",
+            rating: 5,
+            createDate:"2016-01-01",
+            dueDate:"2016-01-10"
         }
     ]
 };
@@ -80,8 +100,8 @@ var noteView = {
         // store pointers to our DOM elements for easy access later
         this.noteElem = document.getElementById('note-details');
         this.noteNameElem = document.getElementById('note-name');
-        this.noteImageElem = document.getElementById('note-img');
-        this.countElem = document.getElementById('note-count');
+        //this.noteImageElem = document.getElementById('note-img');
+        //this.countElem = document.getElementById('note-count');
 
         // on click, increment the current note's counter
         //this.noteImageElem.addEventListener('click', function(){
@@ -95,7 +115,7 @@ var noteView = {
     render: function() {
         // update the DOM elements with values from the current note
         var currentNote = viewModel.getCurrentNote();
-        this.countElem.textContent = currentNote.clickCount;
+        //this.countElem.textContent = currentNote.clickCount;
         this.noteNameElem.textContent = currentNote.name;
         //this.noteImageElem.src = currentNote.imgSrc;
     }

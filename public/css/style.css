@@ -86,7 +86,7 @@ img {
 .banner {
     display: block;
 	color: #fff;
-	background: #3acec2;
+	background: #b5efea;
 	padding: 3.2em 3em;
 	margin-bottom: 60px;
 }
@@ -101,7 +101,11 @@ img {
 	padding: 2em 0;
 	margin-top: 30px;
 }
-
+.main-footer li {
+	display: inline-block;
+	margin-left: 1em;
+	padding:0;
+}
 /* ---- Page Elements ---- */
 
 .logo {
@@ -114,13 +118,23 @@ img {
 
 .note-list {
 	display: inline-block;
-	background: lightgreen;
 	margin-bottom:60px;
+	font-size:.75em;
 }
 
 .note-details {
-	background: lightgoldenrodyellow;
 	margin-bottom:60px;
+	margin-left: 1em;
+	display: inline-block;
+	font-size:.75em;
+}
+
+.btn-toolbar {
+	margin-bottom: 10px;
+}
+
+.btn-table {
+	font-size:.75em;
 }
 
 .filter-container li {
@@ -129,9 +143,67 @@ img {
 	display: inline-block;
 }
 
-.filter-container li select {
+.filter-container {
 	color:black
 }
+
+.body {
+    margin:0;
+    padding:0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.header {
+    margin: 0;
+    height: 150px;
+    background: lightsalmon;
+    overflow: hidden;
+}
+.col {
+    float:left;
+	
+}
+.primary {
+    width:20%;
+    
+}
+.secondary {
+    width:75%;
+    
+}
+.tertiary {
+    width:100%;
+    
+
+
+}
+/* note-details*/
+.btn-toolbar li {
+	display: block;
+	float:left;
+  
+}
+.isDisabled {
+    background: #efefef;
+    color:grey;
+    
+}
+
+.footer {
+    clear:both;
+    height:100px;
+    background: lightslategray;
+}
+
+
 
 /* ================================= 
   Media Queries
@@ -169,7 +241,10 @@ img {
 		
 	}
 
-
+    .note-filters li {
+		display: inline-block;
+		margin-left: 15px;
+	}
 
 	/* ---- Float clearfix ---- */
 

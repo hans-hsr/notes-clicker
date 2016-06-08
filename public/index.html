@@ -22,9 +22,7 @@
     <!--/.main-header-->
 
     <div class="banner">
-        <!--<img class="logo" src="img/city-logo.svg" alt="City"> 
-        <span class="tagline">The best drinks and eats in the best city ever.</span>
-        -->
+        <!--note-filters start -->
         <div class="filter-container">
             <ul class="notes-filters">
                 <li><label for="filter-categories">Kategorie:</label></li>
@@ -81,65 +79,82 @@
         <!--/.secondary-->
 
 
-        <!-- note-details -->
+
         <div class="primary col">
+
+            <!-- note-details start -->
             <div class="note-details" id="note-details">
-                <div><button id="addNoteButton">Neue Notizz</button>
-                <button id="editNoteButton">Bearbeiten</button>
-                </div>
-                <div>
-                    <label for="note-name">Name:</label>
-                    <span id="note-name"></span>
-                </div>
-                <div>
-                    <label for="categories">Kategorie:</label>
-                    <select name="categories" id="categories">
-                    <option value="html">Html</option>
-                    <option value="css">Css</option>
-                    <option value="js">Javascript</option>
-                    <option value="node">Node</option>
-                    <option value="angular">Angular</option>
-                  </select>
-                </div>
-                <div>
-                <label for="ratings">Wichtig:</label>
-                <select name="ratings" id="ratings">
-                        <option value="5">Sofort</option>
-                        <option value="4">Sehr dringend</option>
-                        <option value="3">Dringend</option>
-                        <option value="2">Kann warten</option>
-                        <option value="1">Zuletzt</option>
-                    </select>
-                </div>
 
-                <div>
-                    <label for="duedates">Termin:</label>
-                    <select name="duedates" id="duedates">
-                        <option value="none">Heute</option>
-                        <option value="one">Morgen</option>
-                        <option value="two">2 Tage</option>
-                        <option value="seven">7 Tage</option>
-                        <option value="ten">10 Tage</option>
-                    </select>
-                </div>
-                <div>
-                    <div id="duedate"></div>
-                </div>
-                <div>
-                    <label for="states">Status</label>
-                    <select name="states" id="states">
-                        <option value="notdone">Offen</option>
-                        <option value="done">Erledit</option>
+                <th>
+                    <td><button class="btn-table">Neu</button></td>
+                    <td><button class="btn-table">Bearbeiten</button></td>
+                </th>
+             <div class="tertiary">
 
-                    </select>
-                </div>
-                <div id="note-count"></div>
+                <table>
+
+                    <tr>
+                        <td>Name</td>
+                        <td id="note-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Erstellt</td>
+                        <td id="createDate">Erstellt</td>
+                    </tr>
+                    <tr>
+                        <td>Kategorie</td>
+                        <td id="category">
+                            <select name="categories" id="categories" class="isDisabled" disabled>
+                                <option value="html">Html</option>
+                                <option value="css">Css</option>
+                                <option value="js">Javascript</option>
+                                <option value="node">Node</option>
+                                <option value="angular">Angular</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wichtig</td>
+                        <td id="note-name">
+                            <select name="ratings" id="ratings" class="isDisabled" disabled>
+                                <option value="5">Sofort</option>
+                                <option value="4">Sehr dringend</option>
+                                <option value="3">Dringend</option>
+                                <option value="2">Kann warten</option>
+                                <option value="1">Zuletzt</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Erledigt</td>
+                        <td>
+                            <select name="duedates" id="duedates" class="isDisabled" disabled>
+                                <option value="0">Heute</option>
+                                <option value="1">Morgen</option>
+                                <option value="2">2 Tage</option>
+                                <option value="7">7 Tage</option>
+                                <option value="10">10 Tage</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div id="duedate">Datum</div>
+                        </td>
+                    </tr>
+
+                </table>
+             </div>
 
 
             </div>
-            <!-- notes-details -->
+            <!-- note-details end -->
+
+
+
+
         </div>
-        <!--/.primary-->
+        <!-- notes-details -->
+    </div>
+    <!--/.primary-->
 
 
     </div>
@@ -152,7 +167,7 @@
             <li>Peter Bartholet</li>
             <li>Hans Schenker</li>
         </ul>
-        
+
     </footer>
 
     <script src="app/app.js"></script>
